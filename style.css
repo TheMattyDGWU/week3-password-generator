@@ -4,8 +4,28 @@ body {
     font-family: 'Asap', sans-serif;
 }
 
-.navbar-brand {
-font-size: larger;
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+h2 {
+    text-align: center;
+}
+
+.col-lg {
+    background-color: gray
+    padding-left: ($spacer * .5) !important;
+    padding-right: ($spacer * .5) !important;
 }
 
 .footer {

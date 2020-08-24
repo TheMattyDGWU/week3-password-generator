@@ -8,6 +8,8 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Link to CSS Stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link to Social Media Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Link to Google Font Family 'ASAP' -->
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@600&display=swap" rel="stylesheet">
 
@@ -17,18 +19,44 @@
 
 <body>
     <!-- _________________________________ NAVBAR __________________________________ -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-        <div class="navbar-brand" href="#">
-            <a href="https://themattydgwu.github.io/daniels-week2-homework-responsive-portfolio/" target="_blank">
-                <img alt="Profile Picture" src="img/profile-circle2.png" width="50" height="50">
-            </a> Matty D's Password Generator
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <!-- Left Side -->
+            <a class="navbar-brand mx-left" href="index.html">
+                <h2>Matthew Daniels</h2>
+            </a>
+            <!-- LinkedIn Button -->
+            <a href="www.linkedin.com/in/themattyd" class="fa fa-linkedin"></a>
         </div>
     </nav>
 
     <!-- __________________________________ CONTAINER __________________________________ -->
     <div class="container">
-
-
+        <h2>Password Generator</h2>
+        <div class="row mx-auto">
+            <div class="col px-md-6">
+                <div class="p-3 border bg-light">
+                    <h2>Instructions:</h2>
+                    <ol>
+                        <li>When clicking a button to create a new password, the user is prompted with password
+                            criteria, such as upper/lower case,
+                            length, and type of characters.</li>
+                        <li>Length must be between 8 - 128 characters. Character types must include uppercase,
+                            lowercase, numeric, and/or special
+                            characters.</li>
+                        <li>Input should be validated and at least ONE character type should be selected after all
+                            prompts are answered.</li>
+                        <li>Password is then generated that matches the selected criteria, which is then either
+                            displayed in an alert or written to
+                            the page.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col px-md-6">
+                <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- ______________________________ FOOTER ________________________________ -->
