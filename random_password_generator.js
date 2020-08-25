@@ -60,7 +60,7 @@ function generateRandomPassword(lower, upper, num, sym, length) {
         document.querySelector('input[type="text"]').value = PASSWORD;
 
     } else {
-        document.querySelector('input[type="text"]').value = "Include any key string and define the length!";
+        document.querySelector('input[type="text"]').value = "Please choose options below!";
     }
 
 

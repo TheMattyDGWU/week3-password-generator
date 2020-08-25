@@ -5,12 +5,11 @@ body {
 }
 
 .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .fa-linkedin {
@@ -30,17 +29,17 @@ h2, h3 {
 }
 
 .interface{text-align:center;background:#cccccc;width:90%;height:auto;border:5px solid white;border-radius:25px;position:relative;margin:auto;margin-top:10px;}
-.interface input[type="text"]{color:#00B140;width:80%;font-weight:bold;}
-.interface span{color:#335525;background-color:#00B140;border:1px solid white;padding:2px;cursor:pointer;}
+.interface input[type="text"]{color:black;width:80%;font-weight:bold;}
+.interface span{color:white;background-color:#993333;border:1px solid white;padding:2px;cursor:pointer;}
 .interface span:hover{color:white;}
 .interface label{position:relative;color:white;font-size:20px;display:block;text-align:left;padding-left:15px;user-select:none;}
-.interface label input[type="number"]{position:absolute;right:20px;color:#00B140;width:50px;font-weight:bold;}
+.interface label input[type="number"]{position:absolute;right:20px;color:black;width:50px;font-weight:bold;}
 .interface input[type="checkbox"]{height:0;width:0;}
-.interface label i{position:absolute;right:20px;height:30px;width:30px;background-color:#335525;cursor:pointer;}
+.interface label i{position:absolute;right:20px;height:30px;width:30px;background-color:white;cursor:pointer;}
 .interface label i:hover{background-color:white;}
 .interface label i:after{content: "\2714";position: absolute;top:-2px;right:7px;display:none;color:white;}
 .interface label input:checked ~ .mark:after{display:block;}
-.interface label input:checked ~ .mark{background-color:#00B140;}
+.interface label input:checked ~ .mark{background-color:#993333;}
 .interface button{outline:none;position:relative;background-color:#993333;width:80%;color:white;border:none;border-radius:15px;font-size:20px;margin:auto;cursor:pointer;}
 .interface button:hover{background-color:white;color:black;}
 
