@@ -4,29 +4,45 @@ body {
     font-family: 'Asap', sans-serif;
 }
 
-        .fa {
-            padding: 10px;
-            font-size: 30px;
-            width: 40px;
-            text-align: center;
-            text-decoration: none;
-            margin: 5px 2px;
-        }
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
 
-        .fa-linkedin {
-            background: #007bb5;
-            color: white;
-        }
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
 
-h2 {
+
+h3 {
     text-align: center;
 }
 
+
 .col-lg {
     background-color: gray
-    padding-left: ($spacer * .5) !important;
-    padding-right: ($spacer * .5) !important;
+
 }
+
+.interface{text-align:center;background:linear-gradient(45deg, #00B140, #80E0A7);width:90%;height:auto;border:5px solid white;border-radius:15px;position:relative;margin:auto;margin-top:50px;}
+.interface input[type="text"]{color:#00B140;width:80%;font-weight:bold;}
+.interface span{color:#335525;background-color:#00B140;border:1px solid white;padding:2px;cursor:pointer;}
+.interface span:hover{color:white;}
+.interface label{position:relative;color:white;font-size:20px;display:block;text-align:left;padding-left:15px;user-select:none;}
+.interface label input[type="number"]{position:absolute;right:20px;color:#00B140;width:50px;font-weight:bold;}
+.interface input[type="checkbox"]{height:0;width:0;}
+.interface label i{position:absolute;right:20px;height:30px;width:30px;background-color:#335525;cursor:pointer;}
+.interface label i:hover{background-color:white;}
+.interface label i:after{content: "\2714";position: absolute;top:-2px;right:7px;display:none;color:white;}
+.interface label input:checked ~ .mark:after{display:block;}
+.interface label input:checked ~ .mark{background-color:#00B140;}
+.interface button{outline:none;position:relative;background-color:#335525;width:80%;color:white;border:none;border-radius:15px;font-size:20px;margin:auto;cursor:pointer;font-family: 'McLaren', cursive;}
+.interface button:hover{background-color:white;color:#335525;}
 
 .footer {
     position: fixed;

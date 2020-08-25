@@ -19,14 +19,15 @@
 
 <body>
     <!-- _________________________________ NAVBAR __________________________________ -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Left Side -->
             <a class="navbar-brand mx-left" href="index.html">
                 <h2>Matthew Daniels</h2>
             </a>
             <!-- LinkedIn Button -->
-            <a href="www.linkedin.com/in/themattyd" class="fa fa-linkedin"></a>
+            <a href="www.linkedin.com/in/themattyd" class="fa fa-linkedin">
+            </a>
         </div>
     </nav>
 
@@ -36,9 +37,9 @@
         <div class="row mx-auto pt-3">
             <div class="col px-md-6">
                 <div class="p-3 border bg-light">
-                    <h2>Instructions:</h2>
+                    <h3>Instructions:</h3>
                     <ol>
-                        <li>Please choose a password length between 8 - 1289 characters</li>
+                        <li>Please choose a password length between 8 - 128 characters</li>
                         <li>Please check the boxes for the password options you'd like to include:
                             <ul>- Uppercase?</ul>
                             <ul>- Lowercase?</ul>
@@ -51,11 +52,27 @@
                 </div>
             </div>
             <div class="col px-md-6">
-                <div class="p-3 border bg-light">Custom column padding</div>
+                <div class="p-3 border bg-light">
+                    <h3>Generate Your Password!</h3>
+                    <div class="interface"><br>
+                        <input type="text" readonly></input> <span id="copy"><i class="far fa-copy"></i></span><br><br>
+                        <label>Length: <input type="number" name="length" min="0" name="length"></input></label><br>
+                        <label>Lowercase: <input type="checkbox" name="lowercase"></input><i
+                                class="mark"></i></label><br>
+                        <label>Uppercase: <input type="checkbox" name="uppercase"></input><i
+                                class="mark"></i></label><br>
+                        <label>Numbers: <input type="checkbox" name="number"></input><i class="mark"></i></label><br>
+                        <label>Symbols: <input type="checkbox" name="symbol"></input><i class="mark"></i></label><br>
+                        <button>Generate Password <i class="fas fa-plus-circle"></i></button><br><br>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     </div>
+
+    <!-- link to Script file(random_password_generator.js) -->
+    <script type="text/javascript" src="random_password_generator.js"></script>
 
     <!-- ______________________________ FOOTER ________________________________ -->
     <footer class="footer">
