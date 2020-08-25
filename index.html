@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Link to Google Font Family 'ASAP' -->
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@600&display=swap" rel="stylesheet">
+    <!-- link to FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
@@ -56,14 +59,18 @@
                     <h3>Generate Your Password!</h3>
                     <div class="interface"><br>
                         <input type="text" readonly></input> <span id="copy"><i class="far fa-copy"></i></span><br><br>
-                        <label>Length: <input type="number" name="length" min="0" name="length"></input></label><br>
-                        <label>Lowercase: <input type="checkbox" name="lowercase"></input><i
+                        <label>Length (8-128 characters): <input type="number" name="length" min="0"
+                                name="length"></input></label><br>
+                        <label>Include Lowercase?<input type="checkbox" name="lowercase"></input><i
                                 class="mark"></i></label><br>
-                        <label>Uppercase: <input type="checkbox" name="uppercase"></input><i
+                        <label>Include Uppercase?<input type="checkbox" name="uppercase"></input><i
                                 class="mark"></i></label><br>
-                        <label>Numbers: <input type="checkbox" name="number"></input><i class="mark"></i></label><br>
-                        <label>Symbols: <input type="checkbox" name="symbol"></input><i class="mark"></i></label><br>
-                        <button>Generate Password <i class="fas fa-plus-circle"></i></button><br><br>
+                        <label>Include numbers?<input type="checkbox" name="number"></input><i
+                                class="mark"></i></label><br>
+                        <label>Include Special Characters? <input type="checkbox" name="symbol"></input><i
+                                class="mark"></i></label><br>
+                        <button>Generate Password!</button>
+                        <br><br>
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@ copy.addEventListener("click", () => {
     if (_password.value != "" && _password.value != "Include any key string and define the length!") {
         _password.select();
         document.execCommand('copy');
-        alert("Password copied!");
+        alert("Password copied to clipboard!");
     }
 });
 
@@ -34,6 +34,8 @@ generateButton.addEventListener("click", () => {
 
 
 });
+
+
 
 function generateRandomPassword(lower, upper, num, sym, length) {
     let MAIN_STRING = "";
