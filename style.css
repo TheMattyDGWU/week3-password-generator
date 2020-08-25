@@ -29,7 +29,7 @@ h2, h3 {
 
 }
 
-.interface{text-align:center;background:linear-gradient(45deg, #00B140, #80E0A7);width:90%;height:auto;border:5px solid white;border-radius:15px;position:relative;margin:auto;margin-top:50px;}
+.interface{text-align:center;background:#cccccc;width:90%;height:auto;border:5px solid white;border-radius:25px;position:relative;margin:auto;margin-top:10px;}
 .interface input[type="text"]{color:#00B140;width:80%;font-weight:bold;}
 .interface span{color:#335525;background-color:#00B140;border:1px solid white;padding:2px;cursor:pointer;}
 .interface span:hover{color:white;}
@@ -41,8 +41,8 @@ h2, h3 {
 .interface label i:after{content: "\2714";position: absolute;top:-2px;right:7px;display:none;color:white;}
 .interface label input:checked ~ .mark:after{display:block;}
 .interface label input:checked ~ .mark{background-color:#00B140;}
-.interface button{outline:none;position:relative;background-color:#335525;width:80%;color:white;border:none;border-radius:15px;font-size:20px;margin:auto;cursor:pointer;font-family: 'McLaren', cursive;}
-.interface button:hover{background-color:white;color:#335525;}
+.interface button{outline:none;position:relative;background-color:#993333;width:80%;color:white;border:none;border-radius:15px;font-size:20px;margin:auto;cursor:pointer;}
+.interface button:hover{background-color:white;color:black;}
 
 .footer {
     position: fixed;
