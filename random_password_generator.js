@@ -16,7 +16,8 @@ const key_strings = {
 
 copy.addEventListener("click", () => {
     var _password = document.querySelector('input[type="text"]');
-    if (_password.value != "" && _password.value != "Include any key string and define the length!") {
+    // if (_length.value == "" || _password.value != "Wrong Length");
+    else if (_password.value != "" && _password.value != "Include any key string and define the length!") {
         _password.select();
         document.execCommand('copy');
         alert("Password copied to clipboard!");
@@ -60,7 +61,7 @@ function generateRandomPassword(lower, upper, num, sym, length) {
         document.querySelector('input[type="text"]').value = PASSWORD;
 
     } else {
-        document.querySelector('input[type="text"]').value = "Please choose options below!";
+        document.querySelector('input[type="text"]').value = "Please choose length AND options below!";
     }
 
 

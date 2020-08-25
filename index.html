@@ -35,14 +35,8 @@
             <a class="btn-floating btn-lg btn-fb" type="button" role="button"
                 href="https://www.facebook.com/profile.php?id=100037695346533" target="_blank"><i
                     class="fab fa-facebook-f"></i></a>
-            <!-- Right Side -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse" id="navbarResponsive">
-
-            </nav>
+            <!-- Hidden Right Side NavBar to keep social media buttons on the left -->
+            <nav class="collapse navbar-collapse" id="navbarResponsive"></nav>
         </div>
     </nav>
 
@@ -71,7 +65,7 @@
                     <h3>Generate Your Password!</h3>
                     <div class="interface"><br>
                         <input type="text" readonly></input> <span id="copy"><i class="far fa-copy"></i></span><br><br>
-                        <label>Length (8-128 characters): <input type="number" name="length" min="0"
+                        <label>Length (8-128 characters): <input type="number" name="length" min="8" max="128"
                                 name="length"></input></label><br>
                         <label>Include Lowercase?<input type="checkbox" name="lowercase"></input><i
                                 class="mark"></i></label><br>
