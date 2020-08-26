@@ -33,10 +33,12 @@ generateButton.addEventListener("click", () => {
         alert("Please choose a length between 8 - 128!");
         clear();
     }
-    var activeLower = _lowercase.checked;
-    var activeUpper = _uppercase.checked;
-    var activeNumber = _number.checked;
-    var activeSymbol = _symbol.checked;
+    else {
+        var activeLower = _lowercase.checked;
+        var activeUpper = _uppercase.checked;
+        var activeNumber = _number.checked;
+        var activeSymbol = _symbol.checked;
+    }
 
     generateRandomPassword(activeLower, activeUpper, activeNumber, activeSymbol, length);
 
