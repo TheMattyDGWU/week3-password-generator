@@ -29,9 +29,9 @@
                 <h2>Matthew Daniels</h2>
             </a>
             <!-- LinkedIn Button -->
-            <a href="https://www.linkedin.com/in/themattyd" target="_blank"" class=" fa fa-linkedin-in"></a>
+            <a href="https://www.linkedin.com/in/themattyd" target="_blank" class="fa fa-linkedin-in"></a>
             <!-- FaceBook Button -->
-            <a href=https://www.facebook.com/profile.php?id=100037695346533" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.facebook.com/rancho.matty.d" target="_blank" class="fa fa-facebook"></a>
 
             <!-- Hidden Right Side NavBar to keep social media buttons on the left -->
             <nav class="collapse navbar-collapse" id="navbarResponsive"></nav>
@@ -47,18 +47,20 @@
             <div class="col px-md-6">
                 <div class="p-3 border bg-light">
                     <h3>Instructions:</h3>
-                    <ol>
+                    <ul>
                         <li>Please choose a password length between 8 - 128 characters</li>
                         <li>Please check the boxes for the password options you'd like to include:
-                            <ul>- Uppercase?</ul>
-                            <ul>- Lowercase?</ul>
-                            <ul>- Include numbers?</ul>
-                            <ul>- Include special characters?</ul>
+                            <ul>
+                                <li>Include Uppercase?</li>
+                                <li>Include Lowercase?</li>
+                                <li>Include Numbers?</li>
+                                <li>Include Special Characters?</li>
+                            </ul>
                         </li>
                         <li>You MUST pick at least ONE character type from the four choices above.</li>
                         <li>Press 'Generate' and I'll create a random password for you!</li>
                         <li>To the right of your password is a button to copy it to your clipboard.</li>
-                    </ol>
+                    </ul>
                 </div>
             </div>
             <!-- RIGHT SIDE -->
@@ -66,16 +68,14 @@
                 <div class="p-3 border bg-light">
                     <h3>Generate Your Password!</h3>
                     <div class="interface"><br>
-                        <input type="text" readonly></input> <span id="copy"><i class="far fa-copy"></i></span><br><br>
-                        <label>Length (8-128 characters): <input type="number" name="length" min="8" max="128"
-                                name="length"></input></label><br>
-                        <label>Include Lowercase?<input type="checkbox" name="lowercase"></input><i
+                        <input type="text" readonly> <span id="copy"><i class="far fa-copy"></i></span><br><br>
+                        <label>Length (8-128 characters): <input type="number" name="length" min="8"
+                                max="128"></label><br>
+                        <label>Inclue Lowercase?<input type="checkbox" name="lowercase"><i class="mark"></i></label><br>
+                        <label>Include Uppercase?<input type="checkbox" name="uppercase"><i
                                 class="mark"></i></label><br>
-                        <label>Include Uppercase?<input type="checkbox" name="uppercase"></input><i
-                                class="mark"></i></label><br>
-                        <label>Include numbers?<input type="checkbox" name="number"></input><i
-                                class="mark"></i></label><br>
-                        <label>Include Special Characters? <input type="checkbox" name="symbol"></input><i
+                        <label>Include Numbers?<input type="checkbox" name="number"><i class="mark"></i></label><br>
+                        <label>Include Special Characters? <input type="checkbox" name="symbol"><i
                                 class="mark"></i></label><br>
                         <button>Generate Password!</button>
                         <br><br>
@@ -84,10 +84,9 @@
             </div>
         </div>
     </div>
-    </div>
 
     <!-- link to javaScript Random Password Generator file -->
-    <script type="text/javascript" src="generator.js"></script>
+    <script src="generator.js"></script>
 
     <!-- ______________________________ FOOTER ________________________________ -->
     <footer class="footer">
