@@ -1,6 +1,6 @@
 // this doesn't work yet!!!!!!!!
 function clear() {
-    document.getElementById("lowercase").value = " "
+    document.getElementById("mark").value = " "
 }
 
 // assign variables based upon the occurance of an input field w/ input 'name='
