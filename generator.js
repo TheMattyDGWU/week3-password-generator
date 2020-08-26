@@ -36,7 +36,7 @@ generateButton.addEventListener("click", () => {
     var length = +_length.value;
     if (length < 8 || length > 128) {
         alert("Please choose a length between 8 - 128!");
-        clear();
+        clear(); // this function doesn't work yet!!!!
     }
     else {
         var activeLower = _lowercase.checked;
