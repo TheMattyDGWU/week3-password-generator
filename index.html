@@ -6,15 +6,15 @@
     <!-- Link to Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Link to CSS Stylesheet-->
+    <!-- Link to internal CSS Stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Link to Social Media Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Link to Google Font Family 'ASAP' -->
+    <!-- Link to stylesheet for Google Font Family 'ASAP' -->
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@600&display=swap" rel="stylesheet">
-    <!-- link to FontAwesome-->
+    <!-- link to stylesheet for FontAwesome (copy to clipboard button) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- link to stylesheet for CloudFlare social media buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
@@ -29,12 +29,10 @@
                 <h2>Matthew Daniels</h2>
             </a>
             <!-- LinkedIn Button -->
-            <a class="btn-floating btn-lg btn-li" type="button" role="button"
-                href="https://www.linkedin.com/in/themattyd" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <!--Facebook-->
-            <a class="btn-floating btn-lg btn-fb" type="button" role="button"
-                href="https://www.facebook.com/profile.php?id=100037695346533" target="_blank"><i
-                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/themattyd" target="_blank"" class=" fa fa-linkedin-in"></a>
+            <!-- FaceBook Button -->
+            <a href=https://www.facebook.com/profile.php?id=100037695346533" target="_blank" class="fa fa-facebook"></a>
+
             <!-- Hidden Right Side NavBar to keep social media buttons on the left -->
             <nav class="collapse navbar-collapse" id="navbarResponsive"></nav>
         </div>
@@ -43,7 +41,7 @@
     <!-- __________________________________ CONTAINER __________________________________ -->
     <div class="container">
         <h2>Password Generator</h2>
-        <div class="row mx-auto pt-3">
+        <div class="row row-equal-height mx-auto pt-3">
             <!-- LEFT SIDE -->
             <div class="col px-md-6">
                 <div class="p-3 border bg-light">
@@ -58,6 +56,7 @@
                         </li>
                         <li>You MUST pick at least ONE character type from the four choices above.</li>
                         <li>Press 'Generate' and I'll create a random password for you!</li>
+                        <li>To the right of your password is a button to copy it to your clipboard.</li>
                     </ol>
                 </div>
             </div>
