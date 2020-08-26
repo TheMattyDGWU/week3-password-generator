@@ -1,3 +1,7 @@
+function clear() {
+    document.getElementById("lowercase").value = " "
+}
+
 var _length = document.querySelector('input[name="length"]');
 var _lowercase = document.querySelector('input[name="lowercase"]');
 var _uppercase = document.querySelector('input[name="uppercase"]');
@@ -10,14 +14,13 @@ const key_strings = {
     lowercase: 'abcdefghijklmnopqrstuvwxyz',
     uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
     number: '0123456789',
-    symbol: '*;<>()[]{}#$?!^|'
+    symbol: '!"#$%&()*+,-./:;<=>?@][^_`{|}~'
 };
 
 
 copy.addEventListener("click", () => {
     var _password = document.querySelector('input[type="text"]');
-    // if (_length.value == "" || _password.value != "Wrong Length");
-    else if (_password.value != "" && _password.value != "Include any key string and define the length!") {
+    if (_password.value != "" && _password.value != "Include any key string and define the length!") {
         _password.select();
         document.execCommand('copy');
         alert("Password copied to clipboard!");
@@ -26,6 +29,10 @@ copy.addEventListener("click", () => {
 
 generateButton.addEventListener("click", () => {
     var length = +_length.value;
+    if (length < 8 || length > 128) {
+        alert("Please choose a length between 8 - 128!");
+        clear();
+    }
     var activeLower = _lowercase.checked;
     var activeUpper = _uppercase.checked;
     var activeNumber = _number.checked;
