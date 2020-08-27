@@ -35,6 +35,7 @@ generateButton.addEventListener("click", () => {
         document.getElementById("returnedText").value = "Please pick a number between 8 - 128";
         document.getElementById("length").value = null;
     }
+    // length requirements are met, so activate options from checked boxes
     else {
         var activeLower = _lowercase.checked;
         var activeUpper = _uppercase.checked;
