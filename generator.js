@@ -4,11 +4,11 @@ function clear() {
 }
 
 // assign variables based upon the occurance of an input field w/ input 'name='
-var _length = document.querySelector('input[name="length"]');
-var _lowercase = document.querySelector('input[name="lowercase"]');
-var _uppercase = document.querySelector('input[name="uppercase"]');
-var _number = document.querySelector('input[name="number"]');
-var _symbol = document.querySelector('input[name="symbol"]');
+var _length = document.getElementById("length");
+var _lowercase = document.getElementById("lowercase");
+var _uppercase = document.getElementById("uppercase");
+var _number = document.getElementById("number");
+var _symbol = document.getElementById("symbol");
 var copy = document.getElementById("copy");
 var generateButton = document.querySelector('.interface button');
 
