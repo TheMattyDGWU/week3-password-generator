@@ -1,16 +1,11 @@
-// this doesn't work yet!!!!!!!!
-function clear() {
-    document.getElementById("mark").value = " "
-}
-
-// assign variables based upon the occurance of an input field w/ input 'name='
+// assign variables by Element ID
 var _length = document.getElementById("length");
 var _lowercase = document.getElementById("lowercase");
 var _uppercase = document.getElementById("uppercase");
 var _number = document.getElementById("number");
 var _symbol = document.getElementById("symbol");
 var copy = document.getElementById("copy");
-var generateButton = document.querySelector('.interface button');
+var generateButton = document.getElementById("generate");
 
 // assign string variables for those input fields
 const key_strings = {
@@ -23,7 +18,7 @@ const key_strings = {
 // check to see if user has actually checked any of the boxes and/or a length value
 copy.addEventListener("click", () => {
     var _password = document.querySelector('input[type="text"]');
-    if (_password.value != "" && _password.value != "Include any key string and define the length!") {
+    if (_password.value != "" && _password.value != "Please choose a lenth and option(s)!") {
         _password.select();
         document.execCommand('copy');
         alert("Password copied to clipboard!");
@@ -34,9 +29,11 @@ copy.addEventListener("click", () => {
 // This includes an in-elegant if/else loop to stop processing if length is not correct, but it works.
 generateButton.addEventListener("click", () => {
     var length = +_length.value;
+    // error handling if length value is not between 8 - 128
     if (length < 8 || length > 128) {
         alert("Please choose a length between 8 - 128!");
-        clear(); // this function doesn't work yet!!!!
+        document.getElementById("returnedText").value = "Please pick a number between 8 - 128";  // this works but gets overritten
+        document.getElementById("length").value = null;
     }
     else {
         var activeLower = _lowercase.checked;
@@ -46,8 +43,6 @@ generateButton.addEventListener("click", () => {
     }
     // If a checkbox is active, then it gets passed to the Password Generator
     generateRandomPassword(activeLower, activeUpper, activeNumber, activeSymbol, length);
-
-
 });
 
 
@@ -70,13 +65,16 @@ function generateRandomPassword(lower, upper, num, sym, length) {
     if (MAIN_STRING != "" && length > 0) {
         for (i = 0; i < length; i++) {
             PASSWORD += MAIN_STRING[Math.floor(Math.random() * MAIN_STRING.length)];
+            // returns the generated password
+            document.getElementById("returnedText").value = PASSWORD;
         }
-        // returns the generated password
-        document.querySelector('input[type="text"]').value = PASSWORD;
-        // if no options were chosen error message is returned to the password display input field
+        // error handling if no options were selected but valid length WAS selected
     } else {
-        document.querySelector('input[type="text"]').value = "Please choose length AND options below!";
+        document.getElementById("returnedText").value = "Please choose length AND options below!";
+        document.getElementById("lowercase").checked = false;
+        document.getElementById("uppercase").checked = false;
+        document.getElementById("number").checked = false;
+        document.getElementById("symbol").checked = false;
     }
-
 
 }
