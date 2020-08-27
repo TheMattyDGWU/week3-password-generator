@@ -32,7 +32,7 @@ generateButton.addEventListener("click", () => {
     // error handling if length value is not between 8 - 128
     if (length < 8 || length > 128) {
         alert("Please choose a length between 8 - 128!");
-        document.getElementById("returnedText").value = "Please pick a number between 8 - 128";  // this works but gets overritten
+        document.getElementById("returnedText").value = "Please pick a number between 8 - 128";
         document.getElementById("length").value = null;
     }
     else {
@@ -70,7 +70,7 @@ function generateRandomPassword(lower, upper, num, sym, length) {
         }
         // error handling if no options were selected but valid length WAS selected
     } else {
-        document.getElementById("returnedText").value = "Please choose length AND options below!";
+        document.getElementById("returnedText").value = "Please choose options!";
         document.getElementById("lowercase").checked = false;
         document.getElementById("uppercase").checked = false;
         document.getElementById("number").checked = false;
