@@ -38,13 +38,13 @@
     </nav>
 
     <!-- __________________________________ CONTAINER __________________________________ -->
-    <div class="container">
+    <main class="container">
         <h2><u>Password Generator</u>
         </h2>
         <div class="row row-equal-height mx-1 pt-3">
             <!-- LEFT SIDE -->
             <div class="col px-md-6">
-                <div class="p-2 border bg-light">
+                <section class="p-2 border bg-light">
                     <h3>Instructions:</h3>
                     <ul>
                         <li>Please choose a password length between 8 - 128 characters</li>
@@ -60,11 +60,11 @@
                         <li>Press 'Generate' and I'll create a random password for you!</li>
                         <li>To the right of your password is a button to copy it to your clipboard.</li>
                     </ul>
-                </div>
+                </section>
             </div>
             <!-- RIGHT SIDE -->
             <div class="col px-md-6">
-                <div class="p-2 border bg-light">
+                <section class="p-2 border bg-light">
                     <h3>Generate Your Password!</h3>
                     <div class="form" id="form"><br>
                         <input type="text" id=returnedText readonly> <span id="copy"><i
@@ -78,10 +78,10 @@
                         <button id="generate">Generate Password!</button>
                         <br><br>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- link to javaScript Random Password Generator file -->
     <script src="generator.js"></script>
