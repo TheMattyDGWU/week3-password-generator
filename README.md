@@ -9,4 +9,4 @@ Input should be validated and at least ONE character type should be selected aft
 
 Password is then generated that matches the selected criteria, which is then either displayed in an alert or written to the page.
 
-![15780C60-A933-43ED-BE0F-47EFB8A528D3_1_105_c](https://user-images.githubusercontent.com/66084799/91379491-d7635500-e7f0-11ea-9222-2f26dc4b041e.jpeg)
+![Screen Shot 2020-08-29 at 3 23 39 PM](https://user-images.githubusercontent.com/66084799/91644608-a874fb00-ea0b-11ea-8317-be5bb9fc8505.png)
