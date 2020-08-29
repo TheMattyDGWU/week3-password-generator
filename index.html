@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Link to internal CSS Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <!-- Link to stylesheet for Google Font Family 'ASAP' -->
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@600&display=swap" rel="stylesheet">
     <!-- link to stylesheet for FontAwesome (copy to clipboard button) -->
@@ -47,36 +47,39 @@
                 <section class="p-2 border bg-light">
                     <h3>Instructions:</h3>
                     <ul>
-                        <li>Please choose a password length between 8 - 128 characters</li>
+                        <li>Please choose a password length between 8 - 128 characters</li><br>
                         <li>Please check the boxes for the password options you'd like to include:
                             <ul>
                                 <li>Include Uppercase?</li>
                                 <li>Include Lowercase?</li>
                                 <li>Include Numbers?</li>
-                                <li>Include Special Characters?</li>
+                                <li>Include Symbols?</li>
                             </ul>
-                        </li>
-                        <li>You MUST pick at least ONE character type from the four choices above.</li>
-                        <li>Press 'Generate' and I'll create a random password for you!</li>
+                        </li><br>
+                        <li>You MUST pick at least ONE character type from the four choices above.</li><br>
+                        <li>Press 'Generate' and I'll create a random password for you!</li><br>
                         <li>To the right of your password is a button to copy it to your clipboard.</li>
-                    </ul>
+                    </ul><br>
                 </section>
             </div>
             <!-- RIGHT SIDE -->
             <div class="col px-md-6">
                 <section class="p-2 border bg-light">
                     <h3>Generate Your Password!</h3>
-                    <div class="form" id="form"><br>
-                        <input type="text" id=returnedText readonly> <span id="copy"><i
+                    <div class="interface"><br>
+                        <input type="text" id=returnedText readonly></input> <span id="copy"><i
                                 class="far fa-copy"></i></span><br><br>
-                        <label>Length (8-128 characters):<input type="number" id="length" min="8" max="128"></label><br>
-                        <label>Inclue Lowercase?<input type="checkbox" id="lowercase"><i class="mark"></i></label><br>
-                        <label>Include Uppercase?<input type="checkbox" id="uppercase"><i class="mark"></i></label><br>
-                        <label>Include Numbers?<input type="checkbox" id="number"><i class="mark"></i></label><br>
-                        <label>Include Special Characters?<input type="checkbox" id="symbol"><i
+                        <label>Length: <input type="number" id="length" name="length" min="0"
+                                name="length"></input></label><br>
+                        <label>Lowercase: <input type="checkbox" id="lowercase" name="lowercase"></input><i
                                 class="mark"></i></label><br>
-                        <button id="generate">Generate Password!</button>
-                        <br><br>
+                        <label>Uppercase: <input type="checkbox" id="uppercase" name="uppercase"></input><i
+                                class="mark"></i></label><br>
+                        <label>Numbers: <input type="checkbox" id="number" name="number"></input><i
+                                class="mark"></i></label><br>
+                        <label>Symbols: <input type="checkbox" id="symbol" name="symbol"></input><i
+                                class="mark"></i></label><br>
+                        <button id="generate">Generate Password</button><br><br>
                     </div>
                 </section>
             </div>
@@ -84,7 +87,7 @@
     </main>
 
     <!-- link to javaScript Random Password Generator file -->
-    <script src="generator.js"></script>
+    <script src="assets/generator.js"></script>
 
     <!-- ______________________________ FOOTER ________________________________ -->
     <footer class="footer">
