@@ -36,12 +36,17 @@ h2, h3 {
     text-align: center;
 }
 
-/* Styling for Password Generator */
+/* Styling for Password Generator box */
 .form {text-align:center;background:#cccccc;width:90%;height:auto;border:5px solid white;border-radius:25px;position:relative;margin:auto;margin-top:10px;}
+/* Styling for the Message/Password Return box */
 .form input[type="text"]{color:black;width:80%;font-weight:bold;}
+/* Copy Button */
 .form span{color:white;background-color:#993333;border:1px solid white;padding:2px;}
+/* Styling for the  choice labels */
 .form label{position:relative;color:black;font-size:20px;display:block;text-align:left;padding-left:15px;user-select:none;}
+/* Length selection box */
 .form label input[type="number"]{position:absolute;right:20px;color:black;width:50px;font-weight:bold;}
+/* All the Checkboxes */
 .form input[type="checkbox"]{height:0;width:0;}
 .form label i{position:absolute;right:20px;height:30px;width:30px;background-color:white;}
 .form label i:hover{background-color:#EEE8AA;} 
