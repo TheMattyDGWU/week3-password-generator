@@ -1,4 +1,7 @@
-# week3-password-generator
+# week3-password-generator</br>
+
+project link: https://theycallmemattyd.github.io/week3-password-generator/
+
 When clicking a button to create a new password, the user is prompted with password criteria,
 such as upper/lower case, length, and type of characters.
 
