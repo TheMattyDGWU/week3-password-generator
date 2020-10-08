@@ -1,4 +1,4 @@
-# week3-password-generator</br>
+# Password-Generator</br>
 
 <b>Project Link:</b> https://theycallmemattyd.github.io/week3-password-generator/
 
